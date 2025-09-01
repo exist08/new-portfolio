@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
 </head>
 
-<body class="text-gray-100 font-sans">
-    <div class="projects-body"></div>
+<body class="text-gray-100 bg-gray-900 font-sans">
+    <!-- <div class="projects-body"></div> -->
     <!-- Hero -->
     <header class="text-center py-12">
         <span class="font-bold text-2xl projects-link">Projects</span>
@@ -18,19 +21,24 @@
     </header>
 
     <!-- Project Cards -->
-    <main class="max-w-6xl mx-auto px-6 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <main class="max-w-6xl mx-auto px-6">
 
         <!-- Project Card -->
-        <div class="shadow-xl shadow-gray-700 rounded-2xl p-6 backdrop-blur-2xl">
-            <a href="./styleexchange.html" class="styleexchange-link text-xl text-gray-100 font-semibold mb-2">StyleExchange</a>
-            <p class="text-gray-200 mb-4">
-                A clothing rental app designed for events and festivals like Garba, weddings, or parties. Users can rent
-                suits, kurtas, or dresses with filters for size, brand, and price. It also allows selling or renting out
-                used clothes that no longer fit or are out of style.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-                <span class="bg-gray-200 text-sm px-2 py-1 rounded">React Native</span>
-                <span class="bg-gray-200 text-sm px-2 py-1 rounded">React Redux</span>
+        <div class="shadow-xl shadow-gray-700 rounded-2xl p-6 backdrop-blur-2xl h-100 flex gap-12 border-0 border-gray-700 border-b-2">
+            <div class="imgBox w-2/5 h-full bg-amber-400">
+                <img src="https://assets.vogue.com/photos/660c68c37b64a47319f60f01/master/w_2560%2Cc_limit/good%2520style_00-Lede.jpg" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="content w-3/5  flex flex-col">
+                <h1 class="f-120 stint-ultra-condensed-regular">STYLEEXCHANGE</h1>
+                <p class="text-gray-200 mb-4">
+                    A clothing rental app designed for events and festivals like Garba, weddings, or parties. Users can rent
+                    suits, kurtas, or dresses with filters for size, brand, and price. It also allows selling or renting out
+                    used clothes that no longer fit or are out of style.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-4 text-gray-700 mt-auto">
+                    <span class="bg-gray-200 text-sm px-2 py-1 rounded">React Native</span>
+                    <span class="bg-gray-200 text-sm px-2 py-1 rounded">React Redux</span>
+                </div>
             </div>
         </div>
 

@@ -27,6 +27,19 @@
     line-height: 0.888em;
 }
 
+.f-120{
+    font-size: clamp(40px, 12.666vw, 80px);
+    line-height: 0.888em;
+    font-weight: 700;
+}
+
+.stint-ultra-condensed-regular {
+    font-family: "Stint Ultra Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
 #hero {
     transition: transform 0.1s linear;
 }
