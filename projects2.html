@@ -1,141 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Project Showcase</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script defer src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="text-gray-100 bg-gray-900 font-sans">
+  <body class="text-gray-100 bg-gray-900 font-sans">
     <!-- <div class="projects-body"></div> -->
     <!-- Hero -->
-    <header class="text-center py-12">
-        <span class="font-bold text-2xl projects-link">Projects</span>
-        <p class="text-gray-600">A collection of apps and platforms I’ve built</p>
+    <header class="py-12 px-20">
+      <span class="font-bold text-8xl projects-link font-Dirtyline36Daysoftype2022">Projects</span>
+      <p class="text-gray-300">A collection of apps and platforms I’ve built</p>
     </header>
 
     <!-- Project Cards -->
     <main class="mx-auto px-20">
-
-        <!-- Project Card -->
+      <!-- Project Card -->
+      <div class="project-wrapper">
         <div
-            class="project-card bg-sky-800 p-6 backdrop-blur-2xl h-120 flex gap-12 border-0 border-gray-700 border-b-2">
-            <div class="imgBox w-2/5 h-full bg-amber-400">
-                <img src="https://assets.vogue.com/photos/660c68c37b64a47319f60f01/master/w_2560%2Cc_limit/good%2520style_00-Lede.jpg"
-                    alt="" class="w-full h-full object-cover">
-            </div>
-            <div class="content w-3/5  flex flex-col">
-                <h1 class="f-120 stint-ultra-condensed-regular">STYLEEXCHANGE</h1>
-                <p class="text-gray-200 pt-4">
-                    A clothing rental app designed for events and festivals like Garba, weddings, or parties. Users can
-                    rent
-                    suits, kurtas, or dresses with filters for size, brand, and price. It also allows selling or renting
-                    out
-                    used clothes that no longer fit or are out of style.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4 text-gray-700 mt-auto">
-                    <span class="bg-gray-200 text-sm px-2 py-1 rounded">React Native</span>
-                    <span class="bg-gray-200 text-sm px-2 py-1 rounded">React Redux</span>
-                </div>
-            </div>
-        </div>
-
-
-        <div
-            class="project-card bg-sky-800 p-6 backdrop-blur-2xl h-120 flex gap-12 border-0 border-gray-700 border-b-2">
-            <div class="imgBox w-2/5 h-full bg-amber-400">
-                <img src="https://assets.vogue.com/photos/660c68c37b64a47319f60f01/master/w_2560%2Cc_limit/good%2520style_00-Lede.jpg"
-                    alt="" class="w-full h-full object-cover">
-            </div>
-            <div class="content w-3/5  flex flex-col">
-                <h1 class="f-120 stint-ultra-condensed-regular">GK Dukaan</h1>
-                <p class="text-gray-200 mb-4">
-                    A modern e-commerce platform offering seamless shopping experiences. It supports browsing products
-                    by
-                    category, adding to cart, and secure checkout. The platform is built for small to medium businesses
-                    aiming to take their store online easily.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4 mt-auto">
-                    <span class="bg-gray-200 text-sm px-2 py-1 rounded">React Native</span>
-                    <span class="bg-gray-200 text-sm px-2 py-1 rounded">React Redux</span>
-                </div>
-            </div>
-        </div>
-
-
-        <div
-            class="project-card bg-sky-800 p-6 backdrop-blur-2xl h-120 flex gap-12 border-0 border-gray-700 border-b-2">
-            <div class="imgBox w-2/5 h-full bg-amber-400">
-                <img src="https://assets.vogue.com/photos/660c68c37b64a47319f60f01/master/w_2560%2Cc_limit/good%2520style_00-Lede.jpg"
-                    alt="" class="w-full h-full object-cover">
-            </div>
-            <div class="content w-3/5  flex flex-col">
-                <h1 class="f-120 stint-ultra-condensed-regular">Parade Of Homes</h1>
-                <p class="text-gray-200 mb-4">
-                    A real estate property viewing app that helps users explore listings in detail. It features
-                    clustered
-                    mapping for location-based browsing, property details, scheduling visits, and connecting with
-                    owners.
-                    Ideal for discovering homes in a more interactive way.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4 mt-auto">
-                    <span class="bg-gray-200 text-sm px-2 py-1 rounded">React Native</span>
-                    <span class="bg-gray-200 text-sm px-2 py-1 rounded">Context API</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card bg-sky-800 p-6 backdrop-blur-2xl h-120 flex gap-12 border-0 border-gray-700 border-b-2">
-            <div class="imgBox w-2/5 h-full bg-amber-400">
-                <img src="https://assets.vogue.com/photos/660c68c37b64a47319f60f01/master/w_2560%2Cc_limit/good%2520style_00-Lede.jpg" alt="" class="w-full h-full object-cover">
-            </div>
-            <div class="content w-3/5  flex flex-col">
-                <h1 class="f-120 stint-ultra-condensed-regular">Fusion AI</h1>
-            <p class="text-gray-200 mb-4">
-                An AI-powered creative app that generates unique characters by combining traits from different
-                categories. Users can fuse styles, themes, or archetypes to design fresh, imaginative characters with
-                endless possibilities.  
+          class="project-card p-6 backdrop-blur-2xl h-120 flex gap-12 border-0 border-gray-700 border-b-2"
+        >
+          <div class="imgBox w-2/5 h-full bg-amber-400">
+            <img
+              src="https://assets.vogue.com/photos/660c68c37b64a47319f60f01/master/w_2560%2Cc_limit/good%2520style_00-Lede.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="content w-3/5 flex flex-col">
+            <h1 class="f-120 stint-ultra-condensed-regular">STYLEEXCHANGE</h1>
+            <p class="text-gray-200 pt-4">
+              A clothing rental app designed for events and festivals like
+              Garba, weddings, or parties. Users can rent suits, kurtas, or
+              dresses with filters for size, brand, and price. It also allows
+              selling or renting out used clothes that no longer fit or are out
+              of style.
             </p>
-            <div class="flex flex-wrap gap-2 mb-4 mt-auto">
-                <span class="bg-gray-200 text-sm px-2 py-1 rounded">React Native</span>
-                <span class="bg-gray-200 text-sm px-2 py-1 rounded">Zustand</span>
-                </div>
+            <div class="flex flex-wrap gap-2 mb-4 text-gray-700 mt-auto">
+              <span class="bg-gray-200 text-sm px-2 py-1 rounded"
+                >React Native</span
+              >
+              <span class="bg-gray-200 text-sm px-2 py-1 rounded"
+                >React Redux</span
+              >
             </div>
+          </div>
         </div>
+      </div>
 
-        
-        <div class="project-card bg-sky-800 p-6 backdrop-blur-2xl h-120 flex gap-12 border-0 border-gray-700 border-b-2">
-            <div class="imgBox w-2/5 h-full bg-amber-400">
-                <img src="https://assets.vogue.com/photos/660c68c37b64a47319f60f01/master/w_2560%2Cc_limit/good%2520style_00-Lede.jpg" alt="" class="w-full h-full object-cover">
-            </div>
-            <div class="content w-3/5  flex flex-col">
-                <h1 class="f-120 stint-ultra-condensed-regular">Fileo</h1>
+      <div class="project-wrapper">
+        <div
+          class="project-card p-6 backdrop-blur-2xl h-120 flex gap-12 border-0 border-gray-700 border-b-2"
+        >
+          <div class="imgBox w-2/5 h-full bg-amber-400">
+            <img
+              src="https://assets.vogue.com/photos/660c68c37b64a47319f60f01/master/w_2560%2Cc_limit/good%2520style_00-Lede.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="content w-3/5 flex flex-col">
+            <h1 class="f-120 stint-ultra-condensed-regular">GK Dukaan</h1>
             <p class="text-gray-200 mb-4">
-                An AI-powered file manager app that helps users manage their files efficiently. It allows users to
-                upload, download, and share files with others.
-                It allows users to fetch files from the internet and save them to their device.
+              A modern e-commerce platform offering seamless shopping
+              experiences. It supports browsing products by category, adding to
+              cart, and secure checkout. The platform is built for small to
+              medium businesses aiming to take their store online easily.
             </p>
-            <div class="flex flex-wrap gap-2 mb-4 mt-auto">
-                <span class="bg-gray-200 text-sm px-2 py-1 rounded">React Native</span>
-                <span class="bg-gray-200 text-sm px-2 py-1 rounded">Zustand</span>
-                </div>
+            <div class="flex flex-wrap gap-2 mb-4 text-gray-700 mt-auto">
+              <span class="bg-gray-200 text-sm px-2 py-1 rounded"
+                >React Native</span
+              >
+              <span class="bg-gray-200 text-sm px-2 py-1 rounded"
+                >React Redux</span
+              >
             </div>
+          </div>
         </div>
-        <!-- Repeat for other projects -->
+      </div>
 
+      <div class="project-wrapper">
+        <div
+          class="project-card p-6 backdrop-blur-2xl h-120 flex gap-12 border-0 border-gray-700 border-b-2"
+        >
+          <div class="imgBox w-2/5 h-full bg-amber-400">
+            <img
+              src="https://assets.vogue.com/photos/660c68c37b64a47319f60f01/master/w_2560%2Cc_limit/good%2520style_00-Lede.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="content w-3/5 flex flex-col">
+            <h1 class="f-120 stint-ultra-condensed-regular">Parade Of Homes</h1>
+            <p class="text-gray-200 mb-4">
+              A real estate property viewing app that helps users explore
+              listings in detail. It features clustered mapping for
+              location-based browsing, property details, scheduling visits, and
+              connecting with owners. Ideal for discovering homes in a more
+              interactive way.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 text-gray-700 mt-auto">
+              <span class="bg-gray-200 text-sm px-2 py-1 rounded"
+                >React Native</span
+              >
+              <span class="bg-gray-200 text-sm px-2 py-1 rounded"
+                >Context API</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-wrapper">
+        <div
+          class="project-card p-6 backdrop-blur-2xl h-120 flex gap-12 border-0 border-gray-700 border-b-2"
+        >
+          <div class="imgBox w-2/5 h-full bg-amber-400">
+            <img
+              src="https://assets.vogue.com/photos/660c68c37b64a47319f60f01/master/w_2560%2Cc_limit/good%2520style_00-Lede.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="content w-3/5 flex flex-col">
+            <h1 class="f-120 stint-ultra-condensed-regular">Fusion AI</h1>
+            <p class="text-gray-200 mb-4">
+              An AI-powered creative app that generates unique characters by
+              combining traits from different categories. Users can fuse styles,
+              themes, or archetypes to design fresh, imaginative characters with
+              endless possibilities.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 text-gray-700 mt-auto">
+              <span class="bg-gray-200 text-sm px-2 py-1 rounded"
+                >React Native</span
+              >
+              <span class="bg-gray-200 text-sm px-2 py-1 rounded">Zustand</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-wrapper">
+        <div
+          class="project-card p-6 backdrop-blur-2xl h-120 flex gap-12 border-0 border-gray-700 border-b-2"
+        >
+          <div class="imgBox w-2/5 h-full bg-amber-400">
+            <img
+              src="https://assets.vogue.com/photos/660c68c37b64a47319f60f01/master/w_2560%2Cc_limit/good%2520style_00-Lede.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="content w-3/5 flex flex-col">
+            <h1 class="f-120 stint-ultra-condensed-regular">Fileo</h1>
+            <p class="text-gray-200 mb-4">
+              An AI-powered file manager app that helps users manage their files
+              efficiently. It allows users to upload, download, and share files
+              with others. It allows users to fetch files from the internet and
+              save them to their device.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4 text-gray-700 mt-auto">
+              <span class="bg-gray-200 text-sm px-2 py-1 rounded"
+                >React Native</span
+              >
+              <span class="bg-gray-200 text-sm px-2 py-1 rounded">Zustand</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat for other projects -->
     </main>
 
+    <div class="h-screen"></div>
     <!-- Footer -->
     <footer class="text-center py-8 mt-12 text-gray-500 text-sm">
-        © 2025 Anurag Singh. All rights reserved.
+      © 2025 Anurag Singh. All rights reserved.
     </footer>
-
-</body>
-
+  </body>
 </html>

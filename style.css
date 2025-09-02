@@ -58,6 +58,10 @@
     view-transition-name: styleexchange-title;
 }
 
+::view-transition-group(title) {
+    animation-duration: 1s;
+}
+
 .projects-body {
     width: 100%;
     height: 100%;
@@ -70,10 +74,24 @@
     background-position: 0 0, 0 0, 22px 39px, 22px 39px, 0 0, 22px 39px;
 }
 
-.project-card {
-
+.project-wrapper {
+    height: 480px;
+    display: flex;
+    justify-content: start;
 }
 
-@keyframes identifier {
-    
+.project-card {
+    animation: animate-projects;
+    animation-timeline: view(75% 0);
+}
+
+@keyframes animate-projects {
+    from {
+        width: 20%;
+        height: 20%;
+    }
+    to {
+        width: 100%;
+        height: 100%;
+    }
 }
