@@ -18,6 +18,10 @@
     text-rendering: optimizeLegibility;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .font-Dirtyline36Daysoftype2022 {
     font-family: 'Dirtyline36Daysoftype2022', sans-serif;
 }
@@ -46,6 +50,7 @@
 
 @view-transition {
     navigation: auto;
+    types: slide, forwards; 
 }
 
 .projects-title,
@@ -81,7 +86,7 @@
 }
 
 .project-card {
-    animation: animate-projects;
+    animation: animate-projects ease-in;
     animation-timeline: view(75% 0);
 }
 
@@ -94,4 +99,72 @@
         width: 100%;
         height: 100%;
     }
+}
+
+
+
+:root[data-transition="push"] {
+	&::view-transition-old(page) {
+		&::view-transition-old(page) {
+			animation-name: shrink;
+			transform-origin: 100% 50%;
+		}
+	}
+	&::view-transition-new(page) {
+		animation-name: slide-in;
+	}
+}
+
+:root[data-transition="pop"] {
+	&::view-transition-old(page) {
+		animation-name: slide-out;
+		z-index: 1;
+	}
+	&::view-transition-new(page) {
+		animation-name: grow;
+		transform-origin: 100% 50%;
+	}
+}
+
+@keyframes shrink {
+	to {
+		scale: 0.8;
+		opacity: 0.5;
+	}
+}
+@keyframes grow {
+	from {
+		scale: 0.8;
+		opacity: 0.5;
+	}
+}
+@keyframes slide-in {
+	from {
+		translate: 100vw 0;
+	}
+}
+@keyframes slide-out {
+	to {
+		translate: 100vw 0;
+	}
+}
+@keyframes scale-up {
+	from {
+		scale: 0;
+	}
+}
+@keyframes scale-down {
+	to {
+		scale: 0;
+	}
+}
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+}
+@keyframes fade-out {
+	to {
+		opacity: 0;
+	}
 }

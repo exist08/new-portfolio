@@ -5,17 +5,42 @@
     <title>Project Showcase</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script defer src="script.js"></script>
+    <script defer src="script-projects.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap"
       rel="stylesheet"
     />
+    <style>
+      /* Name a scroll timeline on the scroller (the page here) */
+      html {
+        scroll-timeline-name: --page;
+        scroll-timeline-axis: block;     /* vertical */
+      }
+
+      /* Bind animation progress to page scroll */
+      .progress {
+        position: fixed; inset: 0 0 auto 0; height: 10px;
+        background: currentColor; opacity: .6;
+        z-index: 1000;
+
+        animation: width-grow 2000ms both linear;
+        animation-timeline: --page;      /* use the named scroll timeline */
+        animation-range: 0% 100%;
+      }
+
+      @keyframes width-grow {
+        from { transform: scaleX(0); transform-origin: left; }
+        to   { transform: scaleX(1); transform-origin: left; }
+      }
+
+    </style>
   </head>
 
   <body class="text-gray-100 bg-gray-900 font-sans">
     <!-- <div class="projects-body"></div> -->
+    <div class="progress"></div>
     <!-- Hero -->
     <header class="py-12 px-20">
       <span class="font-bold text-8xl projects-link font-Dirtyline36Daysoftype2022">Projects</span>
@@ -29,7 +54,7 @@
         <div
           class="project-card p-6 backdrop-blur-2xl h-120 flex gap-12 border-0 border-gray-700 border-b-2"
         >
-          <div class="imgBox w-2/5 h-full bg-amber-400">
+          <div class="imgBox rounded-2xl overflow-hidden w-2/5 h-full bg-amber-400">
             <img
               src="https://assets.vogue.com/photos/660c68c37b64a47319f60f01/master/w_2560%2Cc_limit/good%2520style_00-Lede.jpg"
               alt=""
@@ -61,7 +86,7 @@
         <div
           class="project-card p-6 backdrop-blur-2xl h-120 flex gap-12 border-0 border-gray-700 border-b-2"
         >
-          <div class="imgBox w-2/5 h-full bg-amber-400">
+          <div class="imgBox rounded-2xl overflow-hidden w-2/5 h-full bg-amber-400">
             <img
               src="https://assets.vogue.com/photos/660c68c37b64a47319f60f01/master/w_2560%2Cc_limit/good%2520style_00-Lede.jpg"
               alt=""
@@ -92,7 +117,7 @@
         <div
           class="project-card p-6 backdrop-blur-2xl h-120 flex gap-12 border-0 border-gray-700 border-b-2"
         >
-          <div class="imgBox w-2/5 h-full bg-amber-400">
+          <div class="imgBox rounded-2xl overflow-hidden w-2/5 h-full bg-amber-400">
             <img
               src="https://assets.vogue.com/photos/660c68c37b64a47319f60f01/master/w_2560%2Cc_limit/good%2520style_00-Lede.jpg"
               alt=""
@@ -124,7 +149,7 @@
         <div
           class="project-card p-6 backdrop-blur-2xl h-120 flex gap-12 border-0 border-gray-700 border-b-2"
         >
-          <div class="imgBox w-2/5 h-full bg-amber-400">
+          <div class="imgBox rounded-2xl overflow-hidden w-2/5 h-full bg-amber-400">
             <img
               src="https://assets.vogue.com/photos/660c68c37b64a47319f60f01/master/w_2560%2Cc_limit/good%2520style_00-Lede.jpg"
               alt=""
@@ -153,7 +178,7 @@
         <div
           class="project-card p-6 backdrop-blur-2xl h-120 flex gap-12 border-0 border-gray-700 border-b-2"
         >
-          <div class="imgBox w-2/5 h-full bg-amber-400">
+          <div class="imgBox rounded-2xl overflow-hidden w-2/5 h-full bg-amber-400">
             <img
               src="https://assets.vogue.com/photos/660c68c37b64a47319f60f01/master/w_2560%2Cc_limit/good%2520style_00-Lede.jpg"
               alt=""
@@ -179,6 +204,8 @@
       </div>
       <!-- Repeat for other projects -->
     </main>
+
+    <!-- <div id="project-container" class="h-screen fixed inset-0 bg-[#eefe0e5f]"></div> -->
 
     <div class="h-screen"></div>
     <!-- Footer -->
